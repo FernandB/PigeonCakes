@@ -6,10 +6,11 @@
 class Image
 {
 public:
-	Image(std::string&);
+	Image(std::string&,int,int);
 	~Image();
-
-	void draw(sf::RenderWindow&);
+	sf::Sprite getSprite();
+	void setPosition(float,float);
+	void draw(sf::RenderWindow&,bool);
 private:
 	sf::Texture texture;
 	sf::Sprite sprite;
