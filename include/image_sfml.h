@@ -10,7 +10,6 @@ public:
 	~Image();
 	sf::Sprite getSprite();
 	void setPosition(float,float);
-	void draw(sf::RenderWindow&,bool);
 private:
 	sf::Texture texture;
 	sf::Sprite sprite;

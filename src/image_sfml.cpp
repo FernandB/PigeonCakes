@@ -1,5 +1,5 @@
 #include <image_sfml.h>
-
+#include <iostream>
 
 
 Image::Image(std::string& filename,int width,int height)
@@ -7,7 +7,7 @@ Image::Image(std::string& filename,int width,int height)
 	
 	if (!texture.loadFromFile(filename))
 	{
-		// error...
+		std::cout << "Erreur";
 	}
 	texture.setSmooth(true);
 	texture.setRepeated(true);
